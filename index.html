@@ -19,15 +19,19 @@
         <a href="index.html" class="nav-logo">SP.</a>
 
         <!-- Nav links — "active" marks the current page -->
-        <ul>
-          <li><a href="index.html" class="class=nav-link active">Home</a></li>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="projects.html" class="nav-link">Projects</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
 
         <!-- Mobile hamburger button (3 spans = 3 lines of the icon) -->
-        <button id="hamburger" aria-label="Toggle navigation menu">
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -38,37 +42,59 @@
     <!-- ====== MAIN : Home page content ====== -->
     <main>
       <!-- ===== SECTION : Hero ===== -->
-      <section id="hero">
-        <p>Hello, I'm</p>
-        <h1>Sithara Perera</h1>
-        <p>Telecom Engineer · Network Specialist · Problem Solver</p>
-        <p>
-          Over 6 years of hands-on experience in telecommunications operations,
-          network infrastructure, and wireless technologies across Sri Lanka.
-        </p>
+      <section id="hero" class="hero">
+        <!-- Left side — name and description -->
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Sithara<br /><span>Perera</span></h1>
+          <p class="hero-tagline">
+            Telecom Engineer · Network Specialist · Problem Solver
+          </p>
+          <p class="hero-desc">
+            Over 6 years of hands-on experience in telecommunications
+            operations, network infrastructure, and wireless technologies across
+            Sri Lanka.
+          </p>
 
-        <!-- CTA buttons -->
-        <a href="projects.html">View My Work</a>
-        <a href="contact.html">Get In Touch</a>
-
-        <!-- Stats card -->
-        <div>
-          <div>
-            <span>6+</span>
-            <span>Years Experience</span>
-          </div>
-          <div>
-            <span>196+</span>
-            <span>Sites Managed</span>
-          </div>
-          <div>
-            <span>3</span>
-            <span>Companies Served</span>
+          <!-- CTA buttons -->
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
           </div>
         </div>
 
-        <!-- Availability badge -->
-        <p>Available for new opportunities</p>
+        <!-- Right side — stats card -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <!-- Stat 1 -->
+            <div class="stat-item">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <!-- Stat 2 -->
+            <div class="stat-item">
+              <span class="stat-num">196+</span>
+              <span class="stat-label">Sites Managed</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <!-- Stat 3 -->
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Companies Served</span>
+            </div>
+          </div>
+
+          <!-- Availability badge -->
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for new opportunities
+          </div>
+        </div>
       </section>
 
       <!-- ===== SECTION : Skills Snapshot ===== -->
