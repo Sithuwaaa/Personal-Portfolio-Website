@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sithara Perera</title>
+  </head>
+
+  <body>
+    <!-- ========== HEADER : logo and navigation ========== -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <a href="index.html">SP.</a>
+
+        <!-- Nav links -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <!-- Mobile hamburger button -->
+        <button id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ========== MAIN : Contact page content ========== -->
+    <main>
+      <!-- ===== SECTION : Page Hero ===== -->
+      <section id="page-hero">
+        <p>Let's connect</p>
+        <h1>Get In Touch</h1>
+      </section>
+
+      <!-- ===== SECTION : Contact Content ===== -->
+      <section id="contact">
+        <div>
+          <!-- Contact Information -->
+          <div>
+            <h2>Contact Information</h2>
+            <p>
+              Feel free to reach out for professional opportunities,
+              collaborations, or any enquiries. I'll get back to you as soon as
+              possible.
+            </p>
+
+            <!-- Contact details list -->
+            <ul>
+              <li>
+                <strong>Location</strong>
+                <span>863E, Kadawatha Road, Ragama, Sri Lanka</span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <span>sitharayaaa@gmail.com</span>
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <span>+94 76 711 0980</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <h2>Send a Message</h2>
+
+            <!-- Success message shown after form submits -->
+            <div id="form-success" hidden>
+              Thank you! Your message has been sent successfully.
+            </div>
+
+            <!-- Form — novalidate lets JavaScript handle validation -->
+            <form id="contact-form" novalidate>
+              <!-- Name field -->
+              <div>
+                <label for="name"> Full Name <span>*</span> </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                />
+                <span id="name-error" role="alert"></span>
+              </div>
+
+              <!-- Email field -->
+              <div>
+                <label for="email"> Email Address <span>*</span> </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  required
+                />
+                <span id="email-error" role="alert"></span>
+              </div>
+
+              <!-- Message field -->
+              <div>
+                <label for="message"> Message <span>*</span> </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+                <span id="message-error" role="alert"></span>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER : copyright and footer navigation ========== -->
+    <footer>
+      <div>
+        <span>SP.</span>
+        <p>&copy; 2025 Sithara Perera. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
