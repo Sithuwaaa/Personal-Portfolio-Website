@@ -1,0 +1,26 @@
+/* =============================================
+   SITHARA PERERA — PORTFOLIO STYLESHEET
+   style.css
+   ============================================= */
+
+/* ---------- CSS VARIABLES ---------- */
+:root {
+  /* Colours */
+  --green-light: #f0faf4;
+  --green-mid: #d1f0dc;
+  --green-main: #28924d;
+  --green-dark: #1d7a3e;
+  --dark: #111713;
+  --mid: #3a4a40;
+  --muted: #6b7d72;
+  --white: #ffffff;
+  --light: #f5faf6;
+
+  /* Fonts */
+  --font-heading: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* Spacing */
+  --max-width: 1200px;
+  --nav-height: 70px;
+}
