@@ -4,6 +4,7 @@
    ============================================= */
 
 /* ---------- CSS VARIABLES ---------- */
+
 :root {
   /* Colours */
   --green-light: #f0faf4;
@@ -37,6 +38,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -47,6 +49,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 main {
@@ -349,4 +353,147 @@ nav {
     opacity: 0.6;
     transform: scale(1.3);
   }
+}
+
+/* ---------- SKILLS SNAPSHOT ---------- */
+.skills-snapshot {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+/* 4 cards side by side using Flexbox */
+.skills-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  flex: 1 1 200px;
+  background: var(--light);
+  border: 1px solid var(--green-mid);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.skill-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ---------- CTA STRIP ---------- */
+.cta-strip {
+  background: var(--green-main);
+  padding: 4rem 0;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cta-strip h2 {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.cta-strip .btn-primary {
+  background: var(--white);
+  color: var(--green-dark);
+  border-color: var(--white);
+}
+
+.cta-strip .btn-primary:hover {
+  background: var(--green-light);
+  border-color: var(--green-light);
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: var(--dark);
+  padding: 2.5rem 0;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* Nav links on top, grouped in center */
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  order: 1;
+}
+
+.footer-nav a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--green-main);
+}
+
+/* Logo below the nav */
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -1px;
+  order: 2;
+}
+
+/* Copyright at the bottom */
+.footer-copy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+  order: 3;
 }
