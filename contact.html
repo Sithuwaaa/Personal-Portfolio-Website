@@ -42,16 +42,18 @@
     <!-- ========== MAIN : Contact page content ========== -->
     <main>
       <!-- ===== SECTION : Page Hero ===== -->
-      <section id="page-hero">
-        <p>Let's connect</p>
-        <h1>Get In Touch</h1>
+      <section id="page-hero" class="page-hero">
+        <div class="section-inner">
+          <p class="hero-eyebrow">Let's connect</p>
+          <h1 class="page-title">Get In <span>Touch</span></h1>
+        </div>
       </section>
 
       <!-- ===== SECTION : Contact Content ===== -->
-      <section id="contact">
-        <div>
+      <section id="contact" class="contact-section">
+        <div class="section-inner contact-grid">
           <!-- Contact Information -->
-          <div>
+          <div class="contact-info">
             <h2>Contact Information</h2>
             <p>
               Feel free to reach out for professional opportunities,
@@ -59,7 +61,6 @@
               possible.
             </p>
 
-            <!-- Contact details list -->
             <ul>
               <li>
                 <strong>Location</strong>
@@ -77,19 +78,19 @@
           </div>
 
           <!-- Contact Form -->
-          <div>
+          <div class="contact-form-wrap">
             <h2>Send a Message</h2>
 
-            <!-- Success message shown after form submits -->
-            <div id="form-success" hidden>
+            <!-- Success message -->
+            <div id="form-success" class="form-success" hidden>
               Thank you! Your message has been sent successfully.
             </div>
 
-            <!-- Form — novalidate lets JavaScript handle validation -->
+            <!-- Form -->
             <form id="contact-form" novalidate>
               <!-- Name field -->
-              <div>
-                <label for="name"> Full Name <span>*</span> </label>
+              <div class="form-group">
+                <label for="name">Full Name <span>*</span></label>
                 <input
                   type="text"
                   id="name"
@@ -98,12 +99,12 @@
                   autocomplete="name"
                   required
                 />
-                <span id="name-error" role="alert"></span>
+                <span id="name-error" class="error-msg" role="alert"></span>
               </div>
 
               <!-- Email field -->
-              <div>
-                <label for="email"> Email Address <span>*</span> </label>
+              <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
                 <input
                   type="email"
                   id="email"
@@ -112,12 +113,12 @@
                   autocomplete="email"
                   required
                 />
-                <span id="email-error" role="alert"></span>
+                <span id="email-error" class="error-msg" role="alert"></span>
               </div>
 
               <!-- Message field -->
-              <div>
-                <label for="message"> Message <span>*</span> </label>
+              <div class="form-group">
+                <label for="message">Message <span>*</span></label>
                 <textarea
                   id="message"
                   name="message"
@@ -125,7 +126,7 @@
                   placeholder="Write your message here..."
                   required
                 ></textarea>
-                <span id="message-error" role="alert"></span>
+                <span id="message-error" class="error-msg" role="alert"></span>
               </div>
 
               <!-- Submit button -->

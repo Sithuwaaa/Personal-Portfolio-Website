@@ -855,3 +855,154 @@ nav {
 .project-link:hover {
   color: var(--green-main);
 }
+
+/* ---------- CONTACT PAGE ---------- */
+.contact-section {
+  padding: 5rem 0;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Left side — contact info */
+.contact-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+}
+
+.contact-info > p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.contact-info ul li {
+  margin-bottom: 1.25rem;
+}
+
+.contact-info ul li strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.contact-info ul li span {
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+
+/* Right side — contact form */
+.contact-form-wrap {
+  flex: 1.5;
+  min-width: 280px;
+}
+
+.contact-form-wrap h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--mid);
+}
+
+.form-group label span {
+  color: #e53e3e;
+}
+
+/* Input fields and textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--green-mid);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: var(--white);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--green-main);
+  box-shadow: 0 0 0 3px rgba(40, 146, 77, 0.12);
+}
+
+/* Submit button */
+.contact-form-wrap button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  background: var(--green-main);
+  color: var(--white);
+  border: 2px solid var(--green-main);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-form-wrap button:hover {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  transform: translateY(-1px);
+}
+
+/* Success message */
+.form-success {
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 6px;
+  padding: 1rem;
+  color: var(--green-dark);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Error message text */
+.error-msg {
+  font-size: 0.8rem;
+  color: #e53e3e;
+  min-height: 1em;
+}
+
+/* Red border on invalid input */
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: #e53e3e;
+}
