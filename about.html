@@ -42,53 +42,64 @@
     <!-- ========== MAIN : About page content ========== -->
     <main>
       <!-- ===== SECTION : Page Hero ===== -->
-      <section id="page-hero">
-        <p>Get to know me</p>
-        <h1>About Me</h1>
+      <section id="page-hero" class="page-hero">
+        <div class="section-inner">
+          <p class="hero-eyebrow">Get to know me</p>
+          <h1 class="page-title">About <span>Me</span></h1>
+        </div>
       </section>
 
       <!-- ===== SECTION : Biography ===== -->
-      <section id="bio">
-        <h2>Who I Am</h2>
+      <section id="bio" class="about-bio">
+        <div class="section-inner about-grid">
+          <!-- Bio text on the left -->
+          <div class="about-text">
+            <h2>Who I Am</h2>
+            <p>
+              I'm Sithara Perera, a telecommunications engineer based in Ragama,
+              Sri Lanka. With over 6 years of hands-on experience in telecom
+              operations and maintenance, I've built a strong foundation in
+              network infrastructure, wireless technologies, and field
+              engineering.
+            </p>
+            <p>
+              My journey started on the factory floor at Contrinex Ceylon and
+              grew into managing 196+ telecom sites across Sri Lanka for Airtel
+              through NMI Group. I'm currently working as a Site Engineer at
+              Tooway Engineers, handling Huawei Microwave and BBU commissioning
+              for Dialog's Lamp Pole Project.
+            </p>
+            <p>
+              I'm passionate about technology that connects people, and I'm
+              always eager to learn, adapt, and take on new engineering
+              challenges.
+            </p>
+          </div>
 
-        <!-- Short biography -->
-        <p>
-          I'm Sithara Perera, a telecommunications engineer based in Ragama, Sri
-          Lanka. With over 6 years of hands-on experience in telecom operations
-          and maintenance, I've built a strong foundation in network
-          infrastructure, wireless technologies, and field engineering.
-        </p>
-        <p>
-          My journey started on the factory floor at Contrinex Ceylon and grew
-          into managing 196+ telecom sites across Sri Lanka for Airtel through
-          NMI Group. I'm currently working as a Site Engineer at Tooway
-          Engineers, handling Huawei Microwave and BBU commissioning for
-          Dialog's Lamp Pole Project.
-        </p>
-        <p>
-          I'm passionate about technology that connects people, and I'm always
-          eager to learn, adapt, and take on new engineering challenges.
-        </p>
-
-        <!-- Personal details list -->
-        <div>
-          <h3>Personal Details</h3>
-          <ul>
-            <li><strong>Name:</strong> Sithara Perera</li>
-            <li><strong>Location:</strong> Ragama, Sri Lanka</li>
-            <li><strong>Nationality:</strong> Sri Lankan</li>
-            <li><strong>Languages:</strong> Sinhala, English</li>
-            <li><strong>Email:</strong> sitharayaaa@gmail.com</li>
-            <li><strong>Phone:</strong> +94 76 711 0980</li>
-          </ul>
+          <!-- Personal details card on the right -->
+          <div class="about-details">
+            <div class="detail-card">
+              <h3>Personal Details</h3>
+              <ul>
+                <li><strong>Name:</strong> Sithara Perera</li>
+                <li><strong>Location:</strong> Ragama, Sri Lanka</li>
+                <li><strong>Nationality:</strong> Sri Lankan</li>
+                <li><strong>Languages:</strong> Sinhala, English</li>
+                <li><strong>Email:</strong> sitharayaaa@gmail.com</li>
+                <li><strong>Phone:</strong> +94 76 711 0980</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ===== SECTION : Work Experience ===== -->
-      <section id="experience">
-        <h2>Work Experience</h2>
+    <section id="experience" class="experience">
+      <div class="section-inner">
+        <h2 class="section-title">Work Experience</h2>
 
-        <div>
+        <div class="timeline">
+
           <!-- Job 1 — most recent -->
           <article>
             <span>Aug 2025 – Present</span>
@@ -168,49 +179,54 @@
       </section>
 
       <!-- ===== SECTION : Education ===== -->
-      <section id="education">
-        <h2>Education</h2>
+    <section id="education" class="education">
+      <div class="section-inner">
+        <h2 class="section-title">Education</h2>
 
-        <div>
+        <div class="edu-grid">
+
           <!-- Education 1 -->
-          <div>
-            <span>2025</span>
-            <h3>Pearson BTEC HND in Electrical &amp; Electronic Engineering</h3>
+          <div class="edu-card">
+            <span class="edu-year">2025</span>
+            <h3>Pearson BTEC HND in Electrical &amp;
+                Electronic Engineering</h3>
             <p>Skills College of Technology · Nugegoda</p>
-            <span>Merit Pass</span>
+            <span class="edu-badge">Merit Pass</span>
           </div>
 
           <!-- Education 2 -->
-          <div>
-            <span>2018</span>
-            <h3>
-              City &amp; Guilds Advanced Diploma in Telecommunication Systems
-            </h3>
+          <div class="edu-card">
+            <span class="edu-year">2018</span>
+            <h3>City &amp; Guilds Advanced Diploma in
+                Telecommunication Systems</h3>
             <p>SLT Training Center Welisara</p>
           </div>
 
           <!-- Education 3 -->
-          <div>
-            <span>2017</span>
-            <h3>City &amp; Guilds Diploma in Telecommunication Systems</h3>
+          <div class="edu-card">
+            <span class="edu-year">2017</span>
+            <h3>City &amp; Guilds Diploma in
+                Telecommunication Systems</h3>
             <p>SLT Training Center Welisara</p>
           </div>
 
           <!-- Education 4 -->
-          <div>
-            <span>2015</span>
+          <div class="edu-card">
+            <span class="edu-year">2015</span>
             <h3>GCE Advanced Level (A/L)</h3>
             <p>Anuradhapura Central College · Anuradhapura</p>
           </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
       <!-- ===== SECTION : Skills and Interests ===== -->
-      <section id="interests">
-        <h2>Skills &amp; Interests</h2>
+    <section id="interests" class="interests">
+      <div class="section-inner">
+        <h2 class="section-title">Skills &amp; Interests</h2>
 
-        <!-- Skills tag list -->
-        <ul>
+        <ul class="tags-group">
           <li>Adaptability &amp; Flexibility</li>
           <li>Time Management</li>
           <li>Active Listening</li>
@@ -226,7 +242,8 @@
           <li>2G / 3G / 4G Networks</li>
           <li>TSSR Surveys</li>
         </ul>
-      </section>
+      </div>
+    </section>
     </main>
 
     <!-- ========== FOOTER : copyright and footer navigation ========== -->
