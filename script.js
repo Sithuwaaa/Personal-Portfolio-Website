@@ -57,3 +57,71 @@ navItems.forEach(function (link) {
     link.classList.remove("active");
   }
 });
+
+/* -------- 4. CONTACT FORM VALIDATION -------- */
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop the form from submitting normally
+
+    // Get the input fields
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const messageField = document.getElementById("message");
+
+    // Get the error message spans
+    const nameError = document.getElementById("name-error");
+    const emailError = document.getElementById("email-error");
+    const messageError = document.getElementById("message-error");
+
+    // Clear any previous errors
+    nameError.textContent = "";
+    emailError.textContent = "";
+    messageError.textContent = "";
+    nameField.classList.remove("input-error");
+    emailField.classList.remove("input-error");
+    messageField.classList.remove("input-error");
+
+    let isValid = true;
+
+    // Check name is not empty
+    if (nameField.value.trim() === "") {
+      nameError.textContent = "Please enter your full name.";
+      nameField.classList.add("input-error");
+      isValid = false;
+    }
+
+    // Check email is valid using a pattern
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailField.value.trim() === "") {
+      emailError.textContent = "Please enter your email address.";
+      emailField.classList.add("input-error");
+      isValid = false;
+    } else if (!emailPattern.test(emailField.value.trim())) {
+      emailError.textContent = "Please enter a valid email address.";
+      emailField.classList.add("input-error");
+      isValid = false;
+    }
+
+    // Check message is at least 10 characters
+    if (messageField.value.trim().length < 10) {
+      messageError.textContent =
+        "Please write a message (at least 10 characters).";
+      messageField.classList.add("input-error");
+      isValid = false;
+    }
+
+    // If everything is valid, show success and reset the form
+    if (isValid) {
+      const successMsg = document.getElementById("form-success");
+      successMsg.hidden = false;
+      contactForm.reset();
+
+      // Hide the success message after 5 seconds
+      setTimeout(function () {
+        successMsg.hidden = true;
+      }, 5000);
+    }
+  });
+}
