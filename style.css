@@ -1006,3 +1006,42 @@ nav {
 .form-group textarea.input-error {
   border-color: #e53e3e;
 }
+
+/* ---------- MOBILE NAV (hamburger) ---------- */
+@media (max-width: 768px) {
+  /* Show the hamburger button */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide nav links by default, show as dropdown when open */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--green-mid);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* When open class is added by JavaScript, show the menu */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Animate hamburger into an X when open */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
